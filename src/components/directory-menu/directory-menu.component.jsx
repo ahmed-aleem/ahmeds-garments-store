@@ -6,8 +6,8 @@ import "./directory-menu.styles.scss";
 const DirectoryMenu = () => {
     return ( 
         <div className="directory-menu">
-            {MenuList.map(({title, img, size}, index)=>(
-                <MenuItem title={title} img={img} id={index} size={size}/>
+            {MenuList.map(({...allProps}, index)=>(
+                <MenuItem  key={index} {...allProps}/>
             ))}
         </div>
     );
