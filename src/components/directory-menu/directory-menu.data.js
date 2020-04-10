@@ -1,8 +1,8 @@
-import Jacket from "../static/images/menu-item1.jpeg";
-import Hat from "../static/images/menu-item2.jpeg";
-import Sneaker from "../static/images/menu-item3.jpeg";
-import Men from "../static/images/menu-item4.jpeg";
-import Women from "../static/images/menu-item5.jpeg";
+import Jacket from "../../static/images/menu-item1.jpeg";
+import Hat from "../../static/images/menu-item2.jpeg";
+import Sneaker from "../../static/images/menu-item3.jpeg";
+import Men from "../../static/images/menu-item4.jpeg";
+import Women from "../../static/images/menu-item5.jpeg";
 
 const MenuList = [
     {

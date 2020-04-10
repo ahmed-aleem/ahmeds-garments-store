@@ -1,6 +1,6 @@
 import React from 'react';
 import MenuItem from "../menu-item/menu-item.component"
-import MenuList from "../../util/menu-list";
+import MenuList from "./directory-menu.data";
 import "./directory-menu.styles.scss";
 
 const DirectoryMenu = () => {
