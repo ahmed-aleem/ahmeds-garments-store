@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {auth} from '../../utils/firebase/firebase.utils';
 import FormInput from '../form-input/form-input.component';
 import CustomButton from '../custom-button/custom-button.component';
 import {signInWithGoogle} from '../../utils/firebase/firebase.utils';
@@ -24,10 +25,21 @@ const SignIn = () => {
 
     }
 
-    const handleSubmit = e => {
+    const handleSubmit = async e => {
         e.preventDefault();
-        
-        setFields({email: '', password: ''});
+
+        try{
+
+            await auth.signInWithEmailAndPassword(fields.email, fields.password);
+            setFields({email: '', password: ''});
+            alert("Sign In Successful!");
+
+        } catch (error){
+
+            console.log(error);
+            alert("Oops! Problem with Sign In, Try Again Later.")
+
+        }
     }
 
     return ( 
