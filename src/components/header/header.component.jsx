@@ -33,6 +33,7 @@ const Header = ({activeUser}) => {
 }
 
 const mapStatetoProps = state => ({
+    //displayName: store.rootreducer.reducerStateValue
     activeUser: state.user.currentUser
 })
 
