@@ -10,8 +10,8 @@ const CollectionPreview = (props) => {
             <h2 className="title">{title}</h2>
             <div className="preview">
                 {
-                    items.filter((item, i) => (i < 4)).map(({id, ...itemProps}) => (
-                        <CollectionItem key={id} {...itemProps}/>
+                    items.filter((item, i) => (i < 4)).map((item) => (
+                        <CollectionItem key={item.id} item={item}/>
                     ))
                 }
             </div>
