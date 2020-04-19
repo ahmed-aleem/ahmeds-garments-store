@@ -1,7 +1,7 @@
 import React from 'react';
 import {Route, Switch, Redirect} from "react-router-dom";
 import {connect} from 'react-redux';
-import {setCurrentUser} from './redux/user/user.action';
+import {setCurrentUser} from './redux/user/user.actions';
 import {auth, createUserProfileDocument} from  './utils/firebase/firebase.utils';
 import Home from './pages/home/home.component';
 import Shop from './pages/shop/shop.component';
@@ -9,8 +9,6 @@ import Header from './components/header/header.component';
 import SignInSignUp from './pages/sign-in-sign-up/sign-in-sign-up.component';
 
 import "./App.css";
-
-
 
 class App extends React.Component {
   
