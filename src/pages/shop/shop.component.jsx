@@ -1,19 +1,16 @@
 import React from 'react';
+import {Route} from 'react-router-dom';
 
-import ShopData from "./shop.data";
+import CollectionOverview from '../../components/collection-overview/collection-overview.component';
+import Collection from '../collection/collection.component';
 
 import "./shop.styles.scss";
 
-import CollectionPreview from '../../components/collection-preview/collection-preview.component';
-
-const Shop = () => {
+const Shop = ({match}) => {
     return ( 
         <div>
-            {
-                ShopData.map(({id, ...allData}) => (
-                    <CollectionPreview key={id} {...allData}/>
-                ))
-            }
+            <Route path={`${match.path}`} exact component={CollectionOverview}/>
+            <Route path={`${match.path}/:collectionId`} component={Collection}/>
         </div>
     );
 }

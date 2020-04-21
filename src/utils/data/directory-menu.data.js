@@ -4,7 +4,7 @@ import Sneaker from "../../static/images/menu-item3.jpeg";
 import Men from "../../static/images/menu-item4.jpeg";
 import Women from "../../static/images/menu-item5.jpeg";
 
-const MenuList = [
+const sections = [
     {
         title: "hats",
         img: Hat,
@@ -13,25 +13,25 @@ const MenuList = [
     {
         title: "jackets",
         img: Jacket,
-        linkUrl: ""
+        linkUrl: "jackets"
     },
     {
         title: "sneakers",
         img: Sneaker,
-        linkUrl: ""
+        linkUrl: "sneakers"
     },
     {
-        title: "Men",
+        title: "Mens",
         img: Men,
         size: "large",
-        linkUrl: ""
+        linkUrl: "mens"
     },
     {
-        title: "Women",
+        title: "Womens",
         img: Women,
         size: "large",
-        linkUrl: ""
+        linkUrl: "womens"
     }
 ]
 
-export default MenuList;
+export default sections;
